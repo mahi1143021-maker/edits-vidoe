@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruds Edits | Professional Video Editing</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+/* Floating Background */
+.background-animation{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    overflow:hidden;
+}
+
+.background-animation span{
+    position:absolute;
+    display:block;
+    width:20px;
+    height:20px;
+    background:rgba(56,189,248,0.3);
+    border-radius:50%;
+    animation:animate 20s linear infinite;
+    bottom:-150px;
+}
+
+.background-animation span:nth-child(1){ left:10%; animation-duration:18s;}
+.background-animation span:nth-child(2){ left:25%; animation-duration:25s; width:30px; height:30px;}
+.background-animation span:nth-child(3){ left:40%; animation-duration:22s;}
+.background-animation span:nth-child(4){ left:55%; animation-duration:28s; width:25px; height:25px;}
+.background-animation span:nth-child(5){ left:70%; animation-duration:20s;}
+.background-animation span:nth-child(6){ left:80%; animation-duration:26s;}
+.background-animation span:nth-child(7){ left:90%; animation-duration:24s;}
+.background-animation span:nth-child(8){ left:60%; animation-duration:19s;}
+
+@keyframes animate{
+    0%{ transform:translateY(0) scale(1); opacity:1;}
+    100%{ transform:translateY(-1000px) scale(0.5); opacity:0;}
+}
+
+/* Header */
+header{ padding:50px 20px;}
+header h1{ font-size:40px; color:#38bdf8;}
+header p{ color:#cbd5e1;}
+
+/* Pricing */
+.pricing{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    width:280px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(56,189,248,0.4);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 35px rgba(56,189,248,0.8);
+}
+
+.price{
+    font-size:22px;
+    margin:15px 0;
+    color:#22d3ee;
+}
+
+/* Demo Section */
+.demo-section{
+    margin-top:70px;
+    padding:50px 20px;
+    background:#1e293b;
+    border-radius:20px;
+}
+
+.demo-box{
+    max-width:350px;
+    margin:0 auto 20px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 30px rgba(255,0,0,0.5);
+}
+
+.youtube-btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:red;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    transition:0.3s;
+}
+.youtube-btn:hover{
+    background:#cc0000;
+    transform:scale(1.05);
+}
+
+/* Reviews */
+.review-section{
+    margin-top:70px;
+    padding:50px 20px;
+}
+
+.review-section h2{
+    color:#facc15;
+    margin-bottom:40px;
+}
+
+.review-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.review-card{
+    background:#1e293b;
+    padding:25px;
+    width:260px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(250,204,21,0.3);
+    transition:0.4s;
+}
+
+.review-card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 35px rgba(250,204,21,0.8);
+}
+
+.review-card p{ font-size:14px; color:#cbd5e1;}
+.review-card h4{ margin-top:15px; color:#38bdf8;}
+.stars{ color:#facc15; margin-top:10px;}
+
+/* Form */
+.form-section{
+    margin-top:70px;
+    padding:50px 20px;
+}
+
+input, textarea{
+    width:90%;
+    max-width:400px;
+    padding:10px;
+    margin:10px;
+    border-radius:10px;
+    border:none;
+}
+
+button{
+    padding:12px 25px;
+    background:#38bdf8;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+button:hover{ background:#0ea5e9;}
+
+/* WhatsApp */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    padding:15px 20px;
+    border-radius:50px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(37,211,102,0.8);
+}
+</style>
+</head>
+
+<body>
+
+<div class="background-animation">
+<span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span>
+</div>
+
+<header>
+<h1>Ruds Edits</h1>
+<p>Professional Video Editing Services – High Quality & Fast Delivery 🚀</p>
+</header>
+
+<section class="pricing">
+<div class="card">
+<h2>🎬 Short Videos</h2>
+<div class="price">₹100 – ₹500</div>
+<p>Reels | Shorts | Instagram Edits</p>
+</div>
+
+<div class="card">
+<h2>🎥 Long Videos</h2>
+<div class="price">₹500 – ₹1000</div>
+<p>YouTube | Vlogs | Cinematic Edits</p>
+</div>
+</section>
+
+<section class="demo-section">
+<h2>🎥 Watch My Demo Edit</h2>
+<div class="demo-box">
+<iframe width="100%" height="500"
+src="https://www.youtube.com/embed/bKS0HAHGSsI"
+frameborder="0" allowfullscreen></iframe>
+</div>
+<a href="https://youtube.com/shorts/bKS0HAHGSsI?si=StOalt7-Z3MXrU_b"
+target="_blank"
+class="youtube-btn">
+🔴 Watch On YouTube
+</a>
+</section>
+
+<section class="review-section">
+<h2>⭐ Client Reviews</h2>
+<div class="review-container">
+
+<div class="review-card">
+<p>"Next level edit 🔥 Reel viral ho gayi!"</p>
+<h4>– Rahul Sharma</h4>
+<div class="stars">★★★★★</div>
+</div>
+
+<div class="review-card">
+<p>"Fast delivery & smooth transitions 😍"</p>
+<h4>– Priya Verma</h4>
+<div class="stars">★★★★★</div>
+</div>
+
+<div class="review-card">
+<p>"Professional quality with affordable price 💯"</p>
+<h4>– Aman Khan</h4>
+<div class="stars">★★★★★</div>
+</div>
+
+</div>
+</section>
+
+<section class="form-section">
+<h2>📩 Book Your Edit</h2>
+<input type="text" id="name" placeholder="Your Name">
+<input type="text" id="videoType" placeholder="Short / Long Video">
+<textarea id="details" placeholder="Video Details"></textarea>
+<br>
+<button onclick="saveClient()">Submit</button>
+</section>
+
+<a class="whatsapp" href="https://wa.me/916207286776" target="_blank">
+📲 WhatsApp Now
+</a>
+
+<script>
+function saveClient(){
+let name=document.getElementById("name").value;
+let type=document.getElementById("videoType").value;
+let details=document.getElementById("details").value;
+
+let clientData={name,type,details};
+localStorage.setItem("ClientData", JSON.stringify(clientData));
+alert("Details Saved! Contact on WhatsApp to confirm.");
+}
+</script>
+
+</body>
+</html>
